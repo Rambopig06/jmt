@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: 'ChosunBg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메인 div 제목 */
+
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 메인 div 속 글씨용 */
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #ebeaea;
+    padding-top: 90px;
+}
+
+body > .logodiv{
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    text-align: center;
+    background-color: rgb(142, 3, 206);
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > .logodiv > p{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+    width: 450px;
+    font-size: 1.5vw;
+    color: #ffffff;
+    font-family: 'TTLaundryGothicB';
+}
+
+body > .logodiv > .logotext{
+    font-size: 2.5vw;
+    top: 37%;
+}
+
+.logodiv > .blink {
+    font-size: 40px;
+    color: black;
+    animation: blink 2s infinite;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    font-size: 8vw;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(255, 252, 103);
+    font-family: 'ChosunBg';
+    width: 600px;
+}
+
+@keyframes fadetlqkf {
+    from {opacity: 1;}
+    50%{opacity: 1;}
+    to {opacity: 0;}
+}
+
+#minseo {
+    animation: fadetlqkf 5s linear forwards;
+    position: fixed;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>제이테크</title>
+</head>
+<body>
+    <img id="minseo" src="./제이테크로고.PNG" alt="fuckyou" style="width: 200px; z-index: 9999;">
+    <div class="logodiv">
+        <p id="pp">직거래 커뮤니케이션 플랫폼</p><br>
+        <p class="logotext">제이테크</p>
+        <a class="blink" href="#">시작하기11</a>
+    </div>
+<button onclick="clock()">바꾸기</button>
+    <script>
+// setTimeout(function(){
+//     document.getElementById('minseo').style.display = 'none'
+//     window.location.href = './home/home.html'
+// }, 4000);
+
+// document.getElementById('minseo').style.display = 'block'
+
+document.getElementById('pp').innerText = localStorage.getItem('save')
+
+
+    </script>
+</body>
+</html>
